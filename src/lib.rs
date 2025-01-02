@@ -6,8 +6,8 @@
 //! ## Example
 //!
 //! ```rust
-//! use std::io;
-//! use comrak::nodes::Ast;
+//! use std::{cell::RefCell, io};
+//! use comrak::{arena_tree::Node, nodes::{Ast, NodeLink}};
 //! use markdown_walker::MarkdownWalker;
 //!
 //! #[derive(Debug, Default, PartialEq)]
